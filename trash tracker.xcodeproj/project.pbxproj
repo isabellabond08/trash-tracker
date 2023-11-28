@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E47A2C702B14305400E5A99C /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A2C6F2B14305400E5A99C /* login.swift */; };
+		E47A2C722B14306000E5A99C /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A2C712B14306000E5A99C /* signup.swift */; };
+		E47A2C832B14528E00E5A99C /* mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A2C822B14528E00E5A99C /* mission.swift */; };
 		E4914AE92B12DF890019381A /* trash_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4914AE82B12DF890019381A /* trash_trackerApp.swift */; };
 		E4914AEB2B12DF890019381A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4914AEA2B12DF890019381A /* ContentView.swift */; };
 		E4914AED2B12DF8B0019381A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4914AEC2B12DF8B0019381A /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E47A2C6F2B14305400E5A99C /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		E47A2C712B14306000E5A99C /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
+		E47A2C822B14528E00E5A99C /* mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission.swift; sourceTree = "<group>"; };
 		E4914AE52B12DF890019381A /* trash tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trash tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4914AE82B12DF890019381A /* trash_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trash_trackerApp.swift; sourceTree = "<group>"; };
 		E4914AEA2B12DF890019381A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,8 @@
 		E4914ADC2B12DF890019381A = {
 			isa = PBXGroup;
 			children = (
+				E47A2C6F2B14305400E5A99C /* login.swift */,
+				E47A2C712B14306000E5A99C /* signup.swift */,
 				E4914AE72B12DF890019381A /* trash tracker */,
 				E4914AE62B12DF890019381A /* Products */,
 			);
@@ -53,6 +61,7 @@
 			children = (
 				E4914AE82B12DF890019381A /* trash_trackerApp.swift */,
 				E4914AEA2B12DF890019381A /* ContentView.swift */,
+				E47A2C822B14528E00E5A99C /* mission.swift */,
 				E4914AEC2B12DF8B0019381A /* Assets.xcassets */,
 				E4914AEE2B12DF8B0019381A /* Preview Content */,
 			);
@@ -83,6 +92,8 @@
 			dependencies = (
 			);
 			name = "trash tracker";
+			packageProductDependencies = (
+			);
 			productName = "trash tracker";
 			productReference = E4914AE52B12DF890019381A /* trash tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,8 @@
 				Base,
 			);
 			mainGroup = E4914ADC2B12DF890019381A;
+			packageReferences = (
+			);
 			productRefGroup = E4914AE62B12DF890019381A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4914AEB2B12DF890019381A /* ContentView.swift in Sources */,
+				E47A2C722B14306000E5A99C /* signup.swift in Sources */,
+				E47A2C702B14305400E5A99C /* login.swift in Sources */,
 				E4914AE92B12DF890019381A /* trash_trackerApp.swift in Sources */,
+				E47A2C832B14528E00E5A99C /* mission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"trash tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "trash-tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +314,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"trash tracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "trash-tracker-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

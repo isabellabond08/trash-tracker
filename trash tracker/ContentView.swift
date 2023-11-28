@@ -9,18 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+       
+        NavigationStack {
+            ZStack {
+                Image("background2")
+                VStack {
+                    NavigationLink (destination:login()) {
+                            Text("LOGIN")
+                    }
+                    .padding(.top, 550.0)
+                        .buttonStyle(.borderedProminent)
+                        .font(.largeTitle)
+                        .tint(Color("green1"))
+                        NavigationLink (destination:signup()) {
+                            Text("SIGNUP")
+                        }
+                        .padding(.top, 10.0)
+                        .buttonStyle(.borderedProminent)
+                        .font(.largeTitle)
+                        .tint(Color("green1"))
+                    }
+                }
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

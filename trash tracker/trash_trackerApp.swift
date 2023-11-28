@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+
 @main
 struct trash_trackerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      NavigationView {
+        ContentView()
+      }
     }
+  }
 }
